@@ -28,7 +28,7 @@ public class BaseProperties {
 	@Column(name = "deleted_on")
 	private LocalDateTime deletedOn;
 	
-	@Column(name = "is_delete")
+	@Column(name = "is_delete", columnDefinition = "boolean default false")
 	private boolean isDelete;
 
 	public long getCreatedBy() {
